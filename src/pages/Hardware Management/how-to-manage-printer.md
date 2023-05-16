@@ -4,4 +4,4 @@
 
 2. Once the printer manager is open, you will be able to see all pending and active processes. 
 
-3. to re-print previous bills and kitchen tickets from the last 24 hours, tap the "Restore Prints" button, then select the print you would like a copy of by tapping the blue "Print Again" text next to it. 
+3. To re-print previous bills and kitchen tickets from the last 24 hours, tap the "Restore Prints" button, select the bill or ticket, and tap the blue "Print Again" text next to it. 
