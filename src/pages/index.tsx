@@ -1,18 +1,25 @@
+import { Heading, VStack } from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 
-export default function Home() {
+// export async function getServerSideProps(context: any) {
+//   const { locale } = context;
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, ["common"])),
+//     },
+//   };
+// }
+
+export default function Page() {
+  // const { t } = useTranslation("common");
   return (
-    <>
+    <VStack>
       <Head>
-        <title>Deeper Support</title>
-        <meta name="description" content="Deeper support site" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Deeper: Support & Help</title>
       </Head>
-      <main>Deeper Support Site</main>
-    </>
+      {/* <Heading>{t("How can we help?")}</Heading> */}
+    </VStack>
   );
 }

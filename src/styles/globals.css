@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "PloniBold";
+  src: local("PloniBold"),
+    url("../../fonts/ploni-bold-aaa.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PloniLight";
+  src: local("PloniLight"),
+    url("../../fonts/ploni-light-aaa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PloniMedium";
+  src: local("PloniMedium"),
+    url("../../fonts/ploni-medium-aaa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PloniRegular";
+  src: local("PloniRegular"),
+    url("../../fonts/ploni-regular-aaa.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
