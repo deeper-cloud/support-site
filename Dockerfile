@@ -1,5 +1,7 @@
 
 FROM node:16-alpine AS deps
+ARG OPENAI_API_KEY
+
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
@@ -11,7 +13,7 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-ARG OPENAI_API_KEY
+
 
 ENV NODE_ENV production
 
