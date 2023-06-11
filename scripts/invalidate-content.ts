@@ -4,7 +4,7 @@ const { Configuration, OpenAIApi } = require("openai");
 
 async function resolveFromOpenAI(question: string): Promise<string> {
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: process.env.OPENAI_API_KEY,
   });
   const openai = new OpenAIApi(configuration);
   const res = await openai.createChatCompletion({
