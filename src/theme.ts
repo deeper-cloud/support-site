@@ -156,6 +156,38 @@ const theme = extendTheme({
       },
     },
   },
+  styles: {
+    global: {
+      "html, body": {
+        fontFamily: "PloniRegular",
+      },
+      h1: {
+        fontSize: "4xl",
+        fontFamily: "PloniBold",
+      },
+      h2: {
+        fontSize: "3xl",
+        fontFamily: "PloniBold",
+      },
+      h3: {
+        fontSize: "2xl",
+        fontFamily: "PloniBold",
+      },
+      h4: {
+        fontSize: "xl",
+        fontFamily: "PloniBold",
+      },
+      p: {
+        fontSize: "larger",
+      },
+      "article a": {
+        fontSize: "larger",
+        _hover: {
+          color: "accent.500",
+        },
+      },
+    },
+  },
 });
 
 export default theme;

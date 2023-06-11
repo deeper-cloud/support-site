@@ -1,1 +1,19 @@
-{}
+{
+  "howCanWeHelp": "איך אפשר לעזור לך?",
+  "resolveIssues": "פתרון בעיות",
+  "resolveIssuesDescription": "מצא פתרונות לבעיות ולקבלת תמיכה טכנית.",
+  "faqs": "שאלות נפוצות",
+  "faqDescription": "קבל תשובות לשאלות נפוצות.",
+  "results": "תוצאות חיפוש",
+  "search": "חיפוש...",
+  "accessability-statement": "הצהרת נגישות",
+  "terms-and-conditions": "תנאים והגבלות",
+  "privacy-policy": "מדיניות פרטיות",
+  "resolveIssuesAction": "צפה ב {{count}} פתרונות לבעיות",
+  "faqAction": "צפה ב {{count}} שאלות נפוצות",
+  "questions": "שאלות",
+  "questionsDescription": "",
+  "topics": "נושאים",
+  "topicsDescription": "",
+  "searchPlaceholder": "חפש..."
+}

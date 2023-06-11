@@ -1,7 +1,7 @@
 module.exports = {
-  debug: false,
+  debug: true,
   i18n: {
-    defaultLocale: "he-IL",
+    defaultLocale: "en-US",
     locales: ["en-US", 'he-IL'],
     domains: [
       {

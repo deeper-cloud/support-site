@@ -1,1 +1,20 @@
-{}
+{
+  "howCanWeHelp": "How can we help you?",
+  "resolveIssues": "Resolve issues",
+  "resolveIssuesDescription": "Get help with your account and find out how to use our products.",
+  "faqs": "FAQs",
+  "faqDescription": "Find answers to frequently asked questions.",
+  "login": "Login",
+  "results": "Results",
+  "search": "Search",
+  "accessability-statement": "Accessibility statement",
+  "terms-and-conditions": "Terms and conditions",
+  "privacy-policy": "Privacy policy",
+  "resolveIssuesAction": "See all {{count}} articles",
+  "faqAction": "See all {{count}} question",
+  "questions": "Questions",
+  "questionsDescription": "Find answers to frequently asked questions.",
+  "topics": "Topics",
+  "topicsDescription": "Find answers to frequently asked questions.",
+  "searchPlaceholder": "Search..."
+}

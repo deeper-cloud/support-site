@@ -6,10 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "invalidate-content": "ts-node ./scripts/invalidate-content.ts"
+  },
+  "devDependencies": {
+    "@types/glob": "8.1.0",
+    "@types/node": "18.16.1",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.1"
   },
   "dependencies": {
+    "openai": "3.2.1",
+    "fuse.js": "^6.4.6",
+    "ts-node": "^10.9.1",
+    "glob": "^10.2.7",
     "sass": "^1.62.1",
+    "lodash": "^4.17.21",
     "@chakra-ui/next-js": "^2.1.4",
     "@chakra-ui/react": "^2.7.0",
     "@chakra-ui/icons": "2.0.17",
@@ -18,11 +32,6 @@
     "@emotion/styled": "^11.11.0",
     "@markdoc/markdoc": "^0.2.2",
     "@markdoc/next.js": "^0.2.2",
-    "@types/node": "18.16.1",
-    "@types/react": "18.2.0",
-    "@types/react-dom": "18.2.1",
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.3.1",
     "framer-motion": "^10.12.16",
     "next": "13.3.1",
     "react": "18.2.0",
