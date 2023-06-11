@@ -1,0 +1,52 @@
+.root {
+  background: black;
+  width: 100%;
+  padding: 6.5rem 30px calc(2rem + env(safe-area-inset-bottom));
+}
+
+.mobileSection {
+  gap: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.linkSection {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bottomSection {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.rootContainer {
+  width: 100%;
+  max-width: 1540px;
+  // gap: 128px;
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding: 24px 30px;
+  }
+
+  .mobileSection {
+    flex-direction: row;
+    padding-bottom: 48px;
+  }
+
+  .linkSection {
+    flex-direction: column;
+  }
+
+  .bottomSection {
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .rootContainer {
+    gap: 0px;
+  }
+}

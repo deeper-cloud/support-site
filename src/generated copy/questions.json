@@ -1,0 +1,74 @@
+[
+  {
+    "id": "how-to-view-order",
+    "title": "How to View an Order",
+    "description": "Learn how to view the details of an order, including items, quantities, and pricing.",
+    "type": "questions",
+    "link": "/questions/how-to-view-order",
+    "tags": ["view", "order", "details"]
+  },
+  {
+    "id": "how-to-split-payment-item",
+    "title": "How to Split Payment Per Item",
+    "description": "Discover how to split the payment for an order based on individual items and allocate different payment methods.",
+    "type": "questions",
+    "link": "/questions/how-to-split-payment-item",
+    "tags": ["split", "payment", "item"]
+  },
+  {
+    "id": "how-to-split-payment-guest",
+    "title": "How to Split Payment Per Guest",
+    "description": "Find out how to split the payment for an order among multiple guests or diners.",
+    "type": "questions",
+    "link": "/questions/how-to-split-payment-guest",
+    "tags": ["split", "payment", "guest"]
+  },
+  {
+    "id": "how-to-search-item",
+    "title": "How to Search for an Item",
+    "description": "Learn the process of searching for a specific item within the ordering system to quickly locate it.",
+    "type": "questions",
+    "link": "/questions/how-to-search-item",
+    "tags": ["search", "item", "locate"]
+  },
+  {
+    "id": "how-to-remove-order",
+    "title": "How to Remove an Order Item",
+    "description": "Discover how to remove an unwanted or incorrect item from an order before finalizing it.",
+    "type": "questions",
+    "link": "/questions/how-to-remove-order",
+    "tags": ["remove", "order", "item"]
+  },
+  {
+    "id": "how-to-place-order",
+    "title": "How to Place an Order",
+    "description": "Learn the step-by-step process of placing an order, including selecting items, specifying quantities, and confirming the order.",
+    "type": "questions",
+    "link": "/questions/how-to-place-order",
+    "tags": ["place", "order", "process"]
+  },
+  {
+    "id": "how-to-pay-third-party",
+    "title": "How to Pay via Third-Party Options",
+    "description": "Find out how to make a payment using third-party payment options, such as digital wallets or online payment platforms.",
+    "type": "questions",
+    "link": "/questions/how-to-pay-third-party",
+    "tags": ["pay", "third-party", "options"]
+  },
+  {
+    "id": "how-to-open-register",
+    "title": "How to Open the Register",
+    "description": "Learn how to open the cash register at the start of a shift or business day.",
+    "type": "questions",
+    "link": "/questions/how-to-open-register",
+    "tags": ["open", "register", "shift"]
+  },
+  {
+    "id": "how-to-manually-enter-pay",
+    "title": "How to Manually Enter Payment",
+    "description": "Discover how to manually enter a payment amount and process it without relying on automated payment methods.",
+    "type": "questions",
+    "link": "/questions/how-to-manually-enter-pay",
+    "tags": ["manually", "enter", "payment"]
+  }
+]
