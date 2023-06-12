@@ -1,11 +1,23 @@
-import { Box, Container, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  HStack,
+  VStack,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import Background from "./Background";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import styles from "./Layout.module.scss";
 import { Aside } from "./Aside";
+import { useTranslation } from "next-i18next";
+import { ArrowBackIcon } from "@chakra-ui/icons";
+import { useRouter } from "next/router";
 
-export function Layout({ children }: any) {
+export function Layout({ children, ...props }: any) {
+  const { t } = useTranslation("common");
+  const isMobile = useMediaQuery("(max-width: 1024px)")[0];
   return (
     <>
       <Background />
@@ -17,12 +29,19 @@ export function Layout({ children }: any) {
         as="main"
         className={styles.mainContent}
       >
-        <HStack gap="16px" align="start">
-          <Box flex="3">{children}</Box>
-          {/* <Box flex="1" paddingTop="64px">
-            <Aside />
-          </Box> */}
-        </HStack>
+        <VStack align="start">
+          {/* <Button size="sm" variant="outline" leftIcon={<ArrowBackIcon />}>
+            {t("back")}
+          </Button> */}
+          <HStack gap="16px" align="start">
+            <Box flex="3">{children}</Box>
+            {!isMobile && props?.popularPages?.length > 0 && (
+              <Box flex="1" paddingTop="64px">
+                <Aside popularPages={props?.popularPages} />
+              </Box>
+            )}
+          </HStack>
+        </VStack>
       </Container>
       <Footer />
     </>

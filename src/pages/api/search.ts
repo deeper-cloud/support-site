@@ -11,7 +11,7 @@ type Data = {
   error?: string;
 };
 
-const AllItems = [...questions, ...topics];
+export const AllItems = [...questions, ...topics];
 
 const fuse = new Fuse(AllItems, {
   keys: ["title", "description", "tags"],

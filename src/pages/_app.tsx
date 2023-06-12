@@ -3,14 +3,14 @@ import type { AppProps } from "next/app";
 import { ChakraProvider, GlobalStyle, ThemeProvider } from "@chakra-ui/react";
 import theme from "../theme";
 import { Layout } from "../components/Layout";
-import { I18nContext, appWithTranslation } from "next-i18next";
+import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Layout>
+        <Layout {...pageProps}>
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>

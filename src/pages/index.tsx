@@ -15,8 +15,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Item, ItemList } from "../components/ItemList";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { getPopularPages } from "../model/page";
 
-export async function getStaticProps({ locale }: any) {
+export async function getServerSideProps({ locale }: any) {
   const [topics, questions] = await Promise.all([
     import("../generated/topics.json"),
     import("../generated/questions.json"),
@@ -27,6 +28,7 @@ export async function getStaticProps({ locale }: any) {
       ...(await serverSideTranslations(locale, ["common"])),
       topicCount: topics.length,
       questionCount: questions.length,
+      popularPages: await getPopularPages(),
     },
   };
 }

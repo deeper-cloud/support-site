@@ -15,7 +15,9 @@ module.exports = withPlugins([
       ]
     }
   }),
-  withMarkdoc({ mode: 'static' })(),
+  withMarkdoc({ mode: 'static' })(
+    { pageExtensions: ['md', 'ts', 'tsx'] }
+  ),
 ], {
-  i18n
+  i18n,
 })
