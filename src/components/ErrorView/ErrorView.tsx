@@ -1,5 +1,5 @@
 import { Heading, VStack, Text, Button } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 interface ErrorViewProps {
   message: string;
@@ -12,7 +12,7 @@ interface ErrorViewProps {
  * @returns
  */
 export const ErrorView = ({ message, action, actionTitle }: ErrorViewProps) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <VStack paddingTop="16px">
       <VStack gap="2px">
