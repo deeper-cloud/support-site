@@ -18,6 +18,7 @@ import { useRouter } from "next/router";
 export function Layout({ children, ...props }: any) {
   const { t } = useTranslation("common");
   const isMobile = useMediaQuery("(max-width: 1024px)")[0];
+  const router = useRouter();
   return (
     <>
       <Background />
@@ -30,9 +31,18 @@ export function Layout({ children, ...props }: any) {
         className={styles.mainContent}
       >
         <VStack align="start">
-          {/* <Button size="sm" variant="outline" leftIcon={<ArrowBackIcon />}>
-            {t("back")}
-          </Button> */}
+          {router.route !== "/" && (
+            <Button
+              size="md"
+              variant="link"
+              color="accent.500"
+              bg="transparent"
+              leftIcon={<ArrowBackIcon />}
+              onClick={router.back}
+            >
+              {t("back")}
+            </Button>
+          )}
           <HStack gap="16px" align="start">
             <Box flex="3">{children}</Box>
             {!isMobile && props?.popularPages?.length > 0 && (

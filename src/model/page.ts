@@ -1,10 +1,13 @@
 import client from "../db/redis";
-import { AllItems } from "../pages/api/search";
+import questions from "../generated/questions.json";
 
 const PageViewHashKey = "support_site:page_views";
 
 export async function getPopularPages(amount = 10) {
-  const records = await client.hgetall(PageViewHashKey);
+  const records = (await client.hgetall(PageViewHashKey)) as Record<
+    string,
+    string
+  >;
 
   const pages = Object.entries(records)
     .map(([path, strViews]) => {
@@ -12,12 +15,13 @@ export async function getPopularPages(amount = 10) {
     })
     .sort((a, b) => b.views - a.views)
     .map((item) => item.path)
+    .filter((link) => questions.find((item) => item.link === link))
     .map((link) => ({
       link,
-      name: AllItems.find((item) => item.link === link)?.title || "",
+      name: questions.find((item) => item.link === link)?.title || "",
     }));
 
-  const nonCountedPages = AllItems.filter(
+  const nonCountedPages = questions.filter(
     (item) => !pages.find((page) => page.link === item.link)
   );
 
