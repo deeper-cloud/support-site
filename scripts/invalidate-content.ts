@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config({ path: ".env.local" });
 
 const { globSync: glob } = require("glob");
 const fs = require("fs");
