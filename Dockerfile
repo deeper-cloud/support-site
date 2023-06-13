@@ -13,9 +13,9 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-
-
 ENV NODE_ENV production
+
+ENV OPENAI_API_KEY $OPENAI_API_KEY
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
