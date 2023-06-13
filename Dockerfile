@@ -1,6 +1,5 @@
-
-FROM node:16-alpine AS deps
 ARG OPENAI_API_KEY
+FROM node:16-alpine AS deps
 
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
@@ -15,6 +14,7 @@ COPY . .
 
 ENV NODE_ENV production
 
+ARG OPENAI_API_KEY
 ENV OPENAI_API_KEY $OPENAI_API_KEY
 
 ENV NEXT_TELEMETRY_DISABLED 1
