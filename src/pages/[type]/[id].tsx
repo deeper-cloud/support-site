@@ -3,8 +3,8 @@ import { getPopularPages } from "../../model/page";
 import { Box } from "@chakra-ui/react";
 import Markdoc from "@markdoc/markdoc";
 import React from "react";
-import { ValidTypes } from ".";
 import fs from "fs/promises";
+import { ValidTypes } from "../../db/fs";
 
 export async function getServerSideProps({ locale, params }: any) {
   const { id, type } = params;
