@@ -1,1 +1,42 @@
-[{"id":"tables-menu","link":"/topics/tables-menu","title":"Tables","description":"Information about restaurant tables","tags":["seating","layout","reservations"],"type":"topics"},{"id":"payments-menu","link":"/topics/payments-menu","title":"Payments","description":"Information about payment methods and transactions.","tags":["finance","transactions","methods"],"type":"topics"},{"id":"order-menu","link":"/topics/order-menu","title":"Orders","description":"This section allows restaurant staff to view and manage incoming orders from various sources.","tags":["management"],"type":"topics"},{"id":"hr-menu","link":"/topics/hr-menu","title":"HR Management","description":"A system of processes and policies designed to manage an organization's employees.","tags":["HR","Employees","Policies","Processes"],"type":"topics"},{"id":"discounts-menu","link":"/topics/discounts-menu","title":"Discounts","description":"Information on available discounts for restaurant partners.","tags":["promotions","savings","deals"],"type":"topics"}]
+[
+  {
+    "id": "tables-menu",
+    "link": "/topics/tables-menu",
+    "title": "Tables",
+    "description": "A collection of information presented in rows and columns",
+    "tags": ["data"],
+    "type": "topics"
+  },
+  {
+    "id": "payments-menu",
+    "link": "/topics/payments-menu",
+    "title": "Payments",
+    "description": "This topic covers everything related to payments.",
+    "tags": ["finance"],
+    "type": "topics"
+  },
+  {
+    "id": "order-menu",
+    "link": "/topics/order-menu",
+    "title": "Orders",
+    "description": "Information about customer orders",
+    "tags": ["sales"],
+    "type": "topics"
+  },
+  {
+    "id": "hr-menu",
+    "link": "/topics/hr-menu",
+    "title": "HR Management",
+    "description": "A field that deals with the management of human resources in an organization.",
+    "tags": ["HR"],
+    "type": "topics"
+  },
+  {
+    "id": "discounts-menu",
+    "link": "/topics/discounts-menu",
+    "title": "Discounts",
+    "description": "This topic covers various discounts available on our products.",
+    "tags": ["sales", "coupons", "promotions"],
+    "type": "topics"
+  }
+]

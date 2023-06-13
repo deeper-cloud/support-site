@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const { globSync: glob } = require("glob");
 const fs = require("fs");
 const { Configuration, OpenAIApi } = require("openai");
@@ -7,13 +9,14 @@ async function resolveFromOpenAI(question: string): Promise<string> {
     apiKey: process.env.OPENAI_API_KEY,
   });
   const openai = new OpenAIApi(configuration);
+
   const res = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: [
       {
         role: "system",
         content:
-          "You are a world class creative that is helping in building a support site for a tech startup in the restaurant industry.",
+          "When I ask you to fill in JSON data you should only fill in the missing data and not change the existing data.",
       },
       {
         role: "user",
@@ -60,7 +63,7 @@ async function main() {
   // get all markdown files
   // sort all files by category
   const filesByDirectory = new Map<string, string[]>();
-  glob("src/pages/**/*.md")
+  glob("src/content/**/*.md")
     .map((f: string) => f.split("/").slice(-2)) // get last two parts of the path
     .forEach(([category, fileName]: string[]) => {
       if (!filesByDirectory.has(category)) {
@@ -78,21 +81,23 @@ async function main() {
   for (let i = 0; i < keys.length; i++) {
     const key = keys[i];
     const files = filesByDirectory.get(key) as string[];
-    const metadataArr = [];
-    for (let j = 0; j < files.length; j++) {
-      try {
-        console.log(`Parsing ${key}/${files[j]}`);
-        const file = files[j];
-        metadataArr.push({
-          id: file,
-          link: `/${key}/${file}`,
-          ...(await parseMetadata(`src/pages/${key}/${file}.md`, key)),
-        });
-      } catch (error) {
-        console.error(error);
-        continue;
-      }
-    }
+
+    const metadataArr = await Promise.all(
+      files.map(async (file) => {
+        try {
+          console.log(`Parsing ${file}`);
+          return {
+            id: file,
+            link: `/${key}/${file}`,
+            ...(await parseMetadata(`src/content/${key}/${file}.md`, key)),
+          };
+        } catch (error) {
+          console.error(error);
+          return null;
+        }
+      })
+    );
+
     console.log(`Writing ${key}.json`);
     fs.writeFileSync(`src/generated/${key}.json`, JSON.stringify(metadataArr));
   }
