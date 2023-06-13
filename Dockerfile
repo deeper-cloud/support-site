@@ -1,4 +1,3 @@
-ARG OPENAI_API_KEY
 FROM node:16-alpine AS deps
 
 RUN apk add --no-cache libc6-compat
@@ -14,12 +13,12 @@ COPY . .
 
 ENV NODE_ENV production
 
-ARG OPENAI_API_KEY
-ENV OPENAI_API_KEY $OPENAI_API_KEY
+# ARG OPENAI_API_KEY
+# ENV OPENAI_API_KEY $OPENAI_API_KEY
 
 ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN npm run invalidate-content
+# RUN npm run invalidate-content
 
 RUN npm run build
 
