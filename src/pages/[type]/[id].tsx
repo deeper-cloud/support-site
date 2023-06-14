@@ -25,7 +25,7 @@ export async function getServerSideProps({ locale, params }: any) {
   };
 }
 
-export default function TypePage({ doc = "" }: any) {
+export default function Page({ doc = "" }: any) {
   const ast = Markdoc.parse(doc);
   const content = Markdoc.transform(ast);
   return <Box as="article">{Markdoc.renderers.react(content, React)}</Box>;

@@ -27,7 +27,7 @@ export async function getServerSideProps({ locale, params }: any) {
   };
 }
 
-export default function TypePage({ items }: any) {
+export default function Page({ items }: any) {
   const { t } = useTranslation("common");
   return (
     <VStack align="start" gap="64px">

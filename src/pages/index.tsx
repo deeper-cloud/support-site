@@ -1,23 +1,14 @@
-import {
-  Button,
-  Heading,
-  SimpleGrid,
-  VStack,
-  Text,
-  Fade,
-  Collapse,
-} from "@chakra-ui/react";
+import { SimpleGrid, VStack, Collapse } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import { SearchField } from "../components/SearchField";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Item, ItemList } from "../components/ItemList";
-import { useRouter } from "next/router";
-import Link from "next/link";
 import { getPopularPages } from "../model/page";
+import { QuickLinkSection } from "../components/QuickLinksSection";
 
-export async function getServerSideProps({ locale }: any) {
+export async function getServerSideProps({ locale = "en-US" }: any) {
   const [topics, questions] = await Promise.all([
     import("../generated/topics.json"),
     import("../generated/questions.json"),
@@ -31,36 +22,6 @@ export async function getServerSideProps({ locale }: any) {
       popularPages: await getPopularPages(),
     },
   };
-}
-
-interface QuickLinkSectionProps {
-  icon?: JSX.Element;
-  title: string;
-  description: string;
-  action: string;
-  link: string;
-}
-
-function QuickLinkSection({
-  icon,
-  title,
-  description,
-  action,
-  link,
-}: QuickLinkSectionProps) {
-  const router = useRouter();
-  return (
-    <VStack align="start">
-      {icon}
-      <Heading>{title}</Heading>
-      <Text h="64px">{description}</Text>
-      {action && (
-        <Button variant="outline">
-          <Link href={link}>{action}</Link>
-        </Button>
-      )}
-    </VStack>
-  );
 }
 
 function useDebounce(fn: any, delay: number) {
