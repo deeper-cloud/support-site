@@ -5,6 +5,7 @@ const withTM = require('next-transpile-modules')(['date-fns'])
 
 module.exports = withPlugins([
   withTM({
+    i18n,
     output: 'standalone',
     images: {
       remotePatterns: [
@@ -16,7 +17,7 @@ module.exports = withPlugins([
     }
   }),
   withMarkdoc({ mode: 'server' })(
-    { pageExtensions: ['md', 'ts', 'tsx'] }
+    { pageExtensions: ['md', 'ts', 'tsx'], i18n }
   ),
 ], {
   i18n,
