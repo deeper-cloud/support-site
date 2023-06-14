@@ -1,5 +1,5 @@
 import fs from "fs";
 
-export const ValidTypes = fs
-  .readdirSync("../generated", "utf-8")
-  .map((file) => file.replace(".json", ""));
+export const ValidTypes = ["questions", "topics"];
+
+//TODO: actually use FS for this, hack in the meantime
