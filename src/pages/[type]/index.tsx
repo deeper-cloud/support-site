@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import { VStack } from "@chakra-ui/react";
 import { Header } from "../../components/Header";
 import { ItemList } from "../../components/ItemList";
-import { ValidTypes } from "../../db/fs";
+import { ValidTypes } from "../../db/static";
 
 export async function getServerSideProps({ locale, params }: any) {
   const { type } = params;
