@@ -6,7 +6,7 @@ import { Header } from "../../components/Header";
 import { ItemList } from "../../components/ItemList";
 import { ValidTypes } from "../../db/static";
 
-export async function getServerSideProps({ locale, params }: any) {
+export async function getServerSideProps({ locale = "en-US", params }: any) {
   const { type } = params;
   if (!ValidTypes.includes(type)) {
     return {

@@ -1,6 +1,7 @@
+const path = require('path')
+
 module.exports = {
   i18n: {
-    defaultLocale: "en-US",
     locales: ["en-US", 'he-IL'],
     domains: [
       {
@@ -12,6 +13,10 @@ module.exports = {
         defaultLocale: "he-IL",
       },
     ],
+    defaultLocale: "en-US",
   },
+  serializeConfig: false,
+  localePath: path.resolve('./public/locales'),
+  ns: "common",
   reloadOnPrerender: process.env.NODE_ENV !== 'production',
 }

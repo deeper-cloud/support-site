@@ -6,7 +6,7 @@ import React from "react";
 import fs from "fs/promises";
 import { ValidTypes } from "../../db/static";
 
-export async function getServerSideProps({ locale, params }: any) {
+export async function getServerSideProps({ locale = "en-US", params }: any) {
   const { id, type } = params;
   if (!ValidTypes.includes(type)) {
     return {
