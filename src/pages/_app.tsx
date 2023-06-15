@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { ChakraProvider, GlobalStyle, ThemeProvider } from "@chakra-ui/react";
 import theme from "../theme";
 import { Layout } from "../components/Layout";
+import NextI18nextConfig from "../../next-i18next.config";
 import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {
@@ -18,4 +19,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default appWithTranslation(App);
+export default appWithTranslation(App, NextI18nextConfig as any);
