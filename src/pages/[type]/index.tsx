@@ -5,6 +5,8 @@ import { VStack } from "@chakra-ui/react";
 import { Header } from "../../components/Header";
 import { ItemList } from "../../components/ItemList";
 import { ValidTypes } from "../../db/static";
+import Head from "next/head";
+import { upperFirst } from "lodash";
 
 export async function getServerSideProps({ locale = "en-US", params }: any) {
   const { type } = params;
@@ -23,16 +25,25 @@ export async function getServerSideProps({ locale = "en-US", params }: any) {
       ...(await serverSideTranslations(locale, ["common"])),
       items,
       popularPages: await getPopularPages(),
+      type,
     },
   };
 }
 
-export default function Page({ items }: any) {
+export default function Page({ items, type }: any) {
   const { t } = useTranslation("common");
   return (
-    <VStack align="start" gap="64px">
-      <Header title={t("questions")} description={t("questionsDescription")} />
-      <ItemList items={items} />
-    </VStack>
+    <>
+      <Head>
+        <title>{upperFirst(type)}</title>
+      </Head>
+      <VStack align="start" gap="64px">
+        <Header
+          title={t("questions")}
+          description={t("questionsDescription")}
+        />
+        <ItemList items={items} />
+      </VStack>
+    </>
   );
 }

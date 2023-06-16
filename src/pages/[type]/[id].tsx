@@ -2,9 +2,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getPopularPages } from "../../model/page";
 import { Box } from "@chakra-ui/react";
 import Markdoc from "@markdoc/markdoc";
-import React from "react";
+import React, { useMemo } from "react";
 import fs from "fs/promises";
 import { ValidTypes } from "../../db/static";
+import Head from "next/head";
 
 export async function getServerSideProps({ locale = "en-US", params }: any) {
   const { id, type } = params;
@@ -21,12 +22,28 @@ export async function getServerSideProps({ locale = "en-US", params }: any) {
       ...(await serverSideTranslations(locale, ["common"])),
       doc,
       popularPages: await getPopularPages(),
+      id,
     },
   };
 }
 
-export default function Page({ doc = "" }: any) {
+export default function Page({ doc = "", id }: any) {
   const ast = Markdoc.parse(doc);
   const content = Markdoc.transform(ast);
-  return <Box as="article">{Markdoc.renderers.react(content, React)}</Box>;
+
+  const formattedTitle = useMemo(() => {
+    return id
+      .split("-")
+      .map((word: string) => word[0].toUpperCase() + word.slice(1))
+      .join(" ");
+  }, [id]);
+
+  return (
+    <>
+      <Head>
+        <title>{formattedTitle}</title>
+      </Head>
+      <Box as="article">{Markdoc.renderers.react(content, React)}</Box>
+    </>
+  );
 }
