@@ -43,10 +43,12 @@ export function Layout({ children, ...props }: any) {
               {t("back")}
             </Button>
           )}
-          <HStack gap="16px" align="start">
-            <Box flex="3">{children}</Box>
+          <HStack gap="16px" align="start" w="100%">
+            <Box flex="3" w="100%">
+              {children}
+            </Box>
             {!isMobile && props?.popularPages?.length > 0 && (
-              <Box flex="1" paddingTop="64px">
+              <Box flex="1" w="100%" paddingTop="64px">
                 <Aside popularPages={props?.popularPages} />
               </Box>
             )}
