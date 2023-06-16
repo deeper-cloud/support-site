@@ -29,7 +29,7 @@ export function SearchField({
   return (
     <VStack gap="16px" minWidth="90%" width="512px" align="start">
       {title && <Heading>{title}</Heading>}
-      <InputGroup>
+      <InputGroup maxW="min(90vw, 512px)">
         <InputLeftElement>
           <SearchIcon />
         </InputLeftElement>

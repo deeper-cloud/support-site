@@ -94,8 +94,8 @@ export default function Page({
           onChange={(e: any) => setQuery(e.target.value)}
           loading={Boolean(query) && loading}
         />
-        <Collapse in={!Boolean(query)}>
-          <SimpleGrid columns={2} gap="32px">
+        <Collapse in={!Boolean(query)} style={{ width: "100%" }}>
+          <SimpleGrid minChildWidth="256px" gap="32px" w="100%">
             <QuickLinkSection
               title={t("resolveIssues")}
               description={t("resolveIssuesDescription")}
