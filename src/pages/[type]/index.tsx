@@ -36,6 +36,10 @@ export default function Page({ items, type }: any) {
     <>
       <Head>
         <title>{upperFirst(type)}</title>
+        <meta
+          name="description"
+          content="Shows a high level view of a specific post type"
+        />
       </Head>
       <VStack align="start" gap="64px">
         <Header

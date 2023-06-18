@@ -85,6 +85,11 @@ export default function Page({
     <>
       <Head>
         <title>Deeper: Support & Help</title>
+        <meta
+          name="description"
+          content="Deeper is an end-to-end platform for building and managing your
+          restaurant operation"
+        />
       </Head>
       <VStack align="start" gap="48px" minHeight="calc(100vh - 48px)">
         <SearchField

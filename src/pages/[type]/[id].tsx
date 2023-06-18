@@ -42,6 +42,7 @@ export default function Page({ doc = "", id }: any) {
     <>
       <Head>
         <title>{formattedTitle}</title>
+        <meta name="description" content="A detailed view of a post" />
       </Head>
       <Box as="article">{Markdoc.renderers.react(content, React)}</Box>
     </>
