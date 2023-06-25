@@ -4,7 +4,7 @@
 
 2. Make sure the relevant data you would like to export is currently displayed, if not, make sure you complete these 2 steps:
 ---
-- the blue button on the upper-right side of the screen allows you to view the current date relevant to the displayed data. You can manually go back and forth between days by tapping the arrows on each end, or alternate between presets (today, yesterday, last week...) hours, days, weeks and months by tapping the button and selecting the date & time you would like to review. 
+- The blue button on the upper-right side of the screen allows you to view the current date relevant to the displayed data. You can manually go back and forth between days by tapping the arrows on each end, or alternate between presets (today, yesterday, last week...) hours, days, weeks and months by tapping the button and selecting the date & time you would like to review. 
 
 - To access different categorized data to review, simply tap the drop-down button labeled with the current graph title, located below "Analytics" on the upper-left corner of the screen. This will reveal additional options for you to choose from.
 
