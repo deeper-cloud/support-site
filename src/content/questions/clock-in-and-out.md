@@ -6,7 +6,7 @@
 
 2. Choose the relevant name from the list on the screen in order to log in. 
 
-3. Enter the four-digit code assigned by your manager. 
+3. Enter the four-digit code assigned by your manag.
 
 ## Clock Out: 
 
