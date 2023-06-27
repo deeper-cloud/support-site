@@ -1,4 +1,6 @@
-# How to Split Payment Per Guest
+# How to split payment per guest
+
+Useful for large groups wanting to each pay out their part of the bill separately.
 
 1. Reach the payment screen by tapping on the dollar bill icon at the bottom-center of the screen. 
 

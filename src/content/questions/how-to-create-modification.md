@@ -1,4 +1,4 @@
-# How to Create a Modification
+# How to create a modification
 
 Modifications are changes or alterations made to the standard preparation or ingredients of a dish based on the customer's preferences or dietary requirements.
 

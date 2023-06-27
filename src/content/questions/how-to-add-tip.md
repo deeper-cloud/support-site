@@ -1,4 +1,6 @@
-# How to Add a Tip
+# How to add a tip
+
+The process of adding a guest's tip to the total bill. 
 
 1. Reach the payment screen by tapping on the dollar bill icon at the bottom-center of the screen.
 

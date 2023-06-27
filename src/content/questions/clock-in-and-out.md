@@ -1,4 +1,6 @@
-# How to Clock In and Out of Shift
+# How to clock in and out of shift
+
+How to clock in and out of your shift, including selecting the restaurant, logging in with your name, and entering the assigned four-digit code for both clocking in and clocking out.
 
 ## Clock In:
 

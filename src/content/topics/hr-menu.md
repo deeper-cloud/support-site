@@ -1,4 +1,4 @@
 # HR Management
 
-- [How to Clock In and Out of Shift](/docs/nodes)
-- [How to Log In/Out of Account](/docs/nodes)
+- [How to clock in and out of shift](/docs/nodes)
+- [How to log in/out of account](/docs/nodes)

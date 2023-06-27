@@ -1,4 +1,4 @@
-# How to assign Categories to Menus
+# How to assign categories to menus
 
 Menus can be customized and assigned a variety of relevant menu items according to their specific requirements.
 

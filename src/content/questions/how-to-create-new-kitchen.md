@@ -1,4 +1,4 @@
-# How to Create a New Kitchen
+# How to create a new kitchen
 
 Kitchens can be added to menu items for automatic assignment to the relevant display system. 
 

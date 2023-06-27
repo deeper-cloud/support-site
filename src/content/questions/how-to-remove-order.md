@@ -1,5 +1,6 @@
-# How to Remove an Order Item
----
+# How to remove an order item
+
+Remove items added by accident or no longer wanted by the table you're serving. 
 
 3. At the bottom of the page, tap the second icon from the left to access the order overview.
 

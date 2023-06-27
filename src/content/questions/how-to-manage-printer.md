@@ -1,4 +1,7 @@
-# How to Manage Printers
+# How to manage printers
+
+Manage the receipt and ticket printers at your restaurant.
+
 
 1. Tap the signal icon at the bottom-left corner of the main menu (the table layout screen).
 

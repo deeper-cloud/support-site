@@ -1,5 +1,6 @@
-# How to Add a Menu Item to an Order
----
+# How to add a menu item to an order
+
+Understand how to add a menu item to an order. Learn the process of selecting the desired category, choosing the relevant item, customizing it based on preferences, and confirming the addition to the order.
 
 3. At the top-right corner of the screen, select the category of menu items you'd like to order and tap to add the relevant item.
 

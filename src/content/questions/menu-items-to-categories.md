@@ -1,4 +1,4 @@
-# How to assign Menu Items to Categories
+# How to assign menu items to categories
 
 Implement subcategories into categories for more effective communication between guests and staff, as well as a more detailed menu experience.  
 1. Access Menu Engineering via Deeper Hub. 

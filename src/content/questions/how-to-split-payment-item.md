@@ -1,4 +1,6 @@
-# How to Split Payment Per Item
+# How to split payment per item
+
+Useful for guests in groups who want to pay only for what they ordered. 
 
 1. Reach the payment screen by tapping on the dollar bill icon at the bottom-center of the screen. 
 

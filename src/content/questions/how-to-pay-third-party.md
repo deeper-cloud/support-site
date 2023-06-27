@@ -1,4 +1,6 @@
-# How to Pay via Third-Party Options 
+# How to pay via third-party options
+
+Third-party payment options refer to alternative methods of payment that are facilitated by external service providers such as digital wallets, gift cards and mobile payment apps. 
 
 1. Reach the payment screen by tapping on the dollar bill icon at the bottom-center of the screen.
 

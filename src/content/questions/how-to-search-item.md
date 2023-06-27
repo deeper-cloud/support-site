@@ -1,4 +1,6 @@
-# How to Search for an Item
+# How to search for an item
+
+Manually look up the search value for an item. 
 
 1. Tap the magnifying glass icon at the bottom-right side of the order editor screen.
 

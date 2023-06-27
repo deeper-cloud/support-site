@@ -1,4 +1,6 @@
-# How to Address Receipt to Guest/Company
+# How to address a receipt to guest/company
+
+Instructions on addressing the receipt to a guest or company, for customers who require task receipts. 
 
 1. Reach the payment screen by tapping on the dollar bill icon at the bottom-center of the screen.
 

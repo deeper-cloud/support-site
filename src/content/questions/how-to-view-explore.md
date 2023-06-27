@@ -1,4 +1,6 @@
-# How to View Data Graphs
+# How to view data graphs
+
+A way to view your data in a visually engaging format.
 
 ### Deeper BI's analytics are divided into two categories displayed on the upper-right side of the screen: 
 - Overview

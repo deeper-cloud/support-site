@@ -1,4 +1,6 @@
-# How to Manually Enter Payment
+# How to manually enter payment
+
+For guests who require a more comprehensive procedure to settle their bills.
 
 1. Reach the payment screen by tapping on the dollar bill icon at the bottom-center of the screen. 
 

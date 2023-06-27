@@ -1,6 +1,5 @@
 # Tables
 
-Paragraph feature overview
 
-- [How To Change Tables](/docs/nodes)
-- [How To Assign Tables](/docs/nodes)
+- [How to change tables](/docs/nodes)
+- [How to assign tables](/docs/nodes)

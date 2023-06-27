@@ -1,5 +1,7 @@
-# How to Place an Order
----
+# How to place an order
+
+instructions on how to finalize an order using our point-of-sale system.
+
 1.  On the menu screen of your POS, any unoccupied table is represented by a numbered, white square. Assign the appropriate table to the guests you are seating by tapping on its icon. 
 
 2. When a pop-up screen appears, choose the number of guests who are seated at the selected table.

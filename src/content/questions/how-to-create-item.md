@@ -1,4 +1,4 @@
-## How to Create a New Item 
+## How to create a new item 
 
 Items belong to certain categories they are associated with. 
 

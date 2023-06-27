@@ -1,4 +1,4 @@
-# How to Create a New Subcategory 
+# How to create a new subcategory
 
 Each category in a menu consists of subcategories applicable to the relevant category.
 

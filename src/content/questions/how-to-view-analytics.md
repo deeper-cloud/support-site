@@ -1,4 +1,6 @@
-# How to View Analytics Overview
+# How to view analytics overview
+
+For restaurant owners who want an overview of their business's current status and operations.
 
 ### Deeper BI's analytics are divided into two categories displayed on the upper-right side of the screen: 
 - Overview

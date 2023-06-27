@@ -1,4 +1,7 @@
-# How to Export Data to CSV
+# How to export data to CSV
+
+CSV is a file format commonly used for storing and exchanging data. This format allows for easy importing and exporting of data between different software applications, as it provides a simple way to represent structured data.
+
 
 1. Access "Explore" (as shown here - [How to View Data Graphs](/docs/nodes))
 

@@ -1,4 +1,4 @@
-# How to Create a New Menu
+# How to create a new menu
 
 Each menu consists of a combination of categories applicable to the relevant menu.
 

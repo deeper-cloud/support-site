@@ -1,4 +1,4 @@
-# How to Create a new Ingredient
+# How to create a new ingredient
 
 Assigning ingredients to menu items using menu engineering improves kitchen staff efficiency and reduces errors.
 

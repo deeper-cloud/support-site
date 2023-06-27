@@ -8,10 +8,10 @@ You may directly access Apple Support for more precise troubleshooting
 [here](https://getsupport.apple.com).
 
 - [Overheating](https://support.apple.com/en-il/HT201678)
-- [Stuck & Dead Pixels](https://support.apple.com/ipad/repair)
+- [Stuck & dead pixels](https://support.apple.com/ipad/repair)
 - [Connectivity](https://support.apple.com/en-us/HT204051)
-- [Battery Issues](https://www.apple.com/batteries/maximizing-performance/)
-- [Screen Sensitivity](https://support.apple.com/en-us/HT201406)
+- [Battery issues](https://www.apple.com/batteries/maximizing-performance/)
+- [Screen sensitivity](https://support.apple.com/en-us/HT201406)
 
 
 
