@@ -18,5 +18,6 @@
   "topicsDescription": "Find answers to frequently asked questions.",
   "searchPlaceholder": "Search...",
   "popularPages": "Popular pages",
-  "back": "Back"
+  "back": "Back",
+  "PageNotFound":"Page not Found"
 }
