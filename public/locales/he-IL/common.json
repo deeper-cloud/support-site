@@ -17,5 +17,6 @@
   "topicsDescription": "",
   "searchPlaceholder": "חפש...",
   "popularPages": "דפים פופולריים",
-  "back": "חזור"
+  "back": "חזור",
+  "PageNotFound":"דף לא נמצא"
 }
